@@ -60,7 +60,6 @@ tdoa-pewaktu/
 └── SYNC_REKAM.txt             # Contoh perintah perekaman pada beberapa node
 
 smallrx-fm/
-├── README.md                  # Dokumentasi receiver SDR
 ├── Makefile                   # Build program receiver
 └── rad-new.c / rad.sh         # Eksperimen penerimaan dan demodulasi radio
 ```
