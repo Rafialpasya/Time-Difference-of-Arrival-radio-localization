@@ -2,8 +2,6 @@
 
 Eksperimen sistem **Time Difference of Arrival (TDoA)** untuk memperkirakan lokasi pemancar radio menggunakan beberapa receiver RTL-SDR.
 
-> Repository ini merupakan project eksperimen/kolaborasi. Beberapa komponen menggunakan kode atau referensi dari project SDR yang sudah ada. Pastikan atribusi dan kontribusi setiap anggota dijelaskan secara jujur.
-
 ## Gambaran Umum
 
 Sistem ini memproses rekaman sinyal IQ dari tiga receiver untuk menghitung perbedaan waktu kedatangan sinyal (*time difference of arrival*). Perbedaan tersebut digunakan untuk membentuk kurva hiperbola dan memperkirakan posisi pemancar.
@@ -141,28 +139,11 @@ Program C++ menggunakan `ReadIQ` untuk membaca file biner IQ dan mengubah pasang
 
 Format input yang digunakan adalah rekaman IQ dari beberapa receiver. Contoh proses perekaman terdistribusi dapat dilihat pada `tdoa-pewaktu/SYNC_REKAM.txt`.
 
-Jangan menyimpan credential, alamat jaringan internal, atau konfigurasi perangkat yang sensitif di repository publik.
+## Pengembangan Selanjutnya
 
-## Kontribusi
-
-Project ini dapat dikembangkan lebih lanjut dengan:
-
-- merapikan konfigurasi agar tidak hard-coded;
-- menambahkan `requirements.txt` atau `environment.yml`;
-- memperbaiki build C/C++ menggunakan konfigurasi yang konsisten;
-- menambahkan unit test untuk pembacaan IQ dan perhitungan TDoA;
-- menambahkan dokumentasi format data rekaman;
-- menghapus file hasil compile dan data mentah yang tidak diperlukan;
-- menambahkan contoh output dan metrik akurasi yang terdokumentasi.
-
-## Catatan untuk CV
-
-Project ini dapat dicantumkan sebagai project team dengan deskripsi seperti berikut:
-
-> Developed and evaluated a TDoA-based radio transmitter localization pipeline using three RTL-SDR receivers. Worked with MATLAB and Python for IQ signal processing, cross-correlation, hyperbolic positioning, outlier filtering, clustering, and map-based visualization.
-
-Gunakan hanya bagian yang benar-benar sesuai dengan kontribusi pribadi. Jelaskan kontribusi secara spesifik, misalnya pengambilan data, konfigurasi receiver, pengembangan pipeline MATLAB, analisis Python, atau visualisasi hasil.
-
-## Lisensi dan Atribusi
-
-Belum ada lisensi repository yang ditentukan. Tambahkan file `LICENSE` jika project akan didistribusikan secara resmi. Periksa juga atribusi pada komponen SDR yang berasal dari project eksternal sebelum menggunakan atau mempublikasikan ulang kode tersebut.
+- Merapikan konfigurasi agar tidak hard-coded.
+- Menambahkan `requirements.txt` atau `environment.yml`.
+- Memperbaiki build C/C++ menggunakan konfigurasi yang konsisten.
+- Menambahkan unit test untuk pembacaan IQ dan perhitungan TDoA.
+- Menambahkan dokumentasi format data rekaman.
+- Menambahkan contoh output dan metrik akurasi yang terdokumentasi.
